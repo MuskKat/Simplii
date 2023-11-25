@@ -189,6 +189,18 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 ## Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
+## Contributors of Phase 5
+<center>
+  <table>
+  <tr>
+    <td align="center"><a href="https://github.com/MuskKat"><img src="https://avatars.githubusercontent.com/u/135174176?v=4" width="100px;" alt=""/><br /><sub><b>Payal Mehta</b></sub></a></td>
+    <td align="center"><a href="https://github.com/felixphool"><img src="https://avatars.githubusercontent.com/u/72882765?v=4" width="100px;" alt=""/><br /><sub><b>Prathmesh Deshpande</b></sub></a></td>
+    <td align="center"><a href="https://github.com/mihir7121"><img src="https://avatars.githubusercontent.com/u/58786334?v=4" width="100px;" alt=""/><br /><sub><b>Shruti Yadav</b></sub></a></td>
+    <td align="center"><a href="https://github.com/rushildpatel"><img src="https://avatars.githubusercontent.com/u/58886133?v=4" width="100px;" alt=""/><br /><sub><b>Sumedh Limurkar</b></sub></a></td>
+  </tr>
+</table>
+</center>
+
 ## Contributors of Phase 4
 <center>
   <table>
@@ -242,8 +254,8 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii
 
 ## Support
 For any queries and help, please reach out to us at: 
- - Prathmesh Deshpande: pydeshpa@ncsu.edu
- - Payal Mehta: pmehta5@ncsu.edu
- - Shruti Yadav: syadav23@ncsu.edu
- - Sumedh Limburkar: slimbur@ncsu.edu
+ - Muskan Katoch: mkatoch@ncsu.edu
+ - Rucha Kulkarni: rkulkar5@ncsu.edu
+ - Mihir Nikam: mvnikam@ncsu.edu
+ - Rushil Patel: rdpate24@ncsu.edu
 
