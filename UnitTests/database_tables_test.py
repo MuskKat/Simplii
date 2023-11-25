@@ -7,14 +7,14 @@ class Database_Table_Test(unittest.TestCase):
         sqlObj = sql_helper()
         tables = sqlObj.run_query("Show tables")
         numOfTables = len(tables)
-        self.assertEqual(numOfTables, 4)
+        self.assertEqual(numOfTables, 5)
 
     #check if specific table exists or not
     def test_check_table_exists(self):
         sqlObj = sql_helper()
         tables = sqlObj.run_query("Show tables")
         stringTables = str(tables)
-        self.assertEqual("Login_info" in stringTables, True)
+        self.assertEqual("tasks" in stringTables, True)
 
     #check if there are no other tables
     def test_check_table_doesnot_exists(self):
@@ -27,7 +27,7 @@ class Database_Table_Test(unittest.TestCase):
         sqlObj = sql_helper()
         tables = sqlObj.run_query("Show tables")
         numOfTables = len(tables)
-        self.assertNotEqual(numOfTables, 5)
+        self.assertNotEqual(numOfTables, 6)
 
 if __name__ == "__main__":
     unittest.main()
