@@ -7,14 +7,14 @@ Phase 4 Video Demo Link: https://youtu.be/zLEY0Fdii5s
 
 [![DOI](https://zenodo.org/badge/419134447.svg)](https://zenodo.org/doi/10.5281/zenodo.10205562)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Release](https://img.shields.io/github/release/Himanshuu-Gupta/Simplii)](https://github.com/Himanshuu-Gupta/Simplii/releases/tag/simplii)
-![GitHub issues](https://img.shields.io/github/issues-raw/Himanshuu-Gupta/Simplii)
-![Github closes issues](https://img.shields.io/github/issues-closed-raw/Himanshuu-Gupta/Simplii)
-![Github pull requests](https://img.shields.io/github/issues-pr/Himanshuu-Gupta/Simplii)
+[![GitHub Release](https://img.shields.io/github/release/MuskKat/Simplii)](https://github.com/MuskKat/Simplii/releases/tag/simplii)
+![GitHub issues](https://img.shields.io/github/issues-raw/MuskKat/Simplii)
+![Github closes issues](https://img.shields.io/github/issues-closed-raw/MuskKat/Simplii)
+![Github pull requests](https://img.shields.io/github/issues-pr/MuskKat/Simplii)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Build Status](https://app.travis-ci.com/adamyen/Simplii.svg?branch=main)](https://app.travis-ci.com/adamyen/Simplii)
+[![Build Status](https://app.travis-ci.com/MuskKat/Simplii.svg?branch=main)](https://app.travis-ci.com/MuskKat/Simplii)
 ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/angelaho0504/4974f4b4275b0e2ed9c8776a9c995949/raw/test.json)
-[![Codecov](https://github.com/Himanshuu-Gupta/Simplii/actions/workflows/codecov.yml/badge.svg)](https://github.com/Himanshuu-Gupta/Simplii/actions/workflows/codecov.yml)
+[![Codecov](https://github.com/MuskKat/Simplii/actions/workflows/codecov.yml/badge.svg)](https://github.com/MuskKat/Simplii/actions/workflows/codecov.yml)
 
 ## Why use Simplii?
 
