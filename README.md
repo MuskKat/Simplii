@@ -7,7 +7,7 @@ Phase 4 Video Demo Link: https://youtu.be/zLEY0Fdii5s
 
 [![DOI](https://zenodo.org/badge/419134447.svg)](https://zenodo.org/doi/10.5281/zenodo.10205562)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Release](https://img.shields.io/github/release/MuskKat/Simplii)](https://github.com/MuskKat/Simplii/releases/tag/simplii)
+[![GitHub Release](https://img.shields.io/github/release/MuskKat/Simplii)](https://github.com/MuskKat/Simplii/releases/tag/1.0))
 ![GitHub issues](https://img.shields.io/github/issues-raw/MuskKat/Simplii)
 ![Github closes issues](https://img.shields.io/github/issues-closed-raw/MuskKat/Simplii)
 ![Github pull requests](https://img.shields.io/github/issues-pr/MuskKat/Simplii)
