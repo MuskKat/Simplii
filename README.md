@@ -5,7 +5,7 @@ Phase 4 Video Demo Link: https://youtu.be/zLEY0Fdii5s
 
 **Task Scheduler Web App**
 
-[![DOI]([https://zenodo.org/badge/419134447.svg)]
+[![DOI](https://zenodo.org/badge/419134447.svg)]
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Release](https://img.shields.io/github/release/Himanshuu-Gupta/Simplii)](https://github.com/Himanshuu-Gupta/Simplii/releases/tag/simplii)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Himanshuu-Gupta/Simplii)
