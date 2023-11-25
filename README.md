@@ -193,10 +193,10 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii
 <center>
   <table>
   <tr>
-    <td align="center"><a href="https://github.com/MuskKat"><img src="https://avatars.githubusercontent.com/u/135174176?v=4" width="100px;" alt=""/><br /><sub><b>Payal Mehta</b></sub></a></td>
-    <td align="center"><a href="https://github.com/felixphool"><img src="https://avatars.githubusercontent.com/u/72882765?v=4" width="100px;" alt=""/><br /><sub><b>Prathmesh Deshpande</b></sub></a></td>
-    <td align="center"><a href="https://github.com/mihir7121"><img src="https://avatars.githubusercontent.com/u/58786334?v=4" width="100px;" alt=""/><br /><sub><b>Shruti Yadav</b></sub></a></td>
-    <td align="center"><a href="https://github.com/rushildpatel"><img src="https://avatars.githubusercontent.com/u/58886133?v=4" width="100px;" alt=""/><br /><sub><b>Sumedh Limurkar</b></sub></a></td>
+    <td align="center"><a href="https://github.com/MuskKat"><img src="https://avatars.githubusercontent.com/u/135174176?v=4" width="100px;" alt=""/><br /><sub><b>Muskan Katoch</b></sub></a></td>
+    <td align="center"><a href="https://github.com/felixphool"><img src="https://avatars.githubusercontent.com/u/72882765?v=4" width="100px;" alt=""/><br /><sub><b>Rucha Kulkarni</b></sub></a></td>
+    <td align="center"><a href="https://github.com/mihir7121"><img src="https://avatars.githubusercontent.com/u/63261772?v=4" width="100px;" alt=""/><br /><sub><b>Mihir Nikam</b></sub></a></td>
+    <td align="center"><a href="https://github.com/rushildpatel"><img src="https://avatars.githubusercontent.com/u/73517149?v=4" width="100px;" alt=""/><br /><sub><b>Rushil Patel</b></sub></a></td>
   </tr>
 </table>
 </center>
