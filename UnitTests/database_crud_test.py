@@ -28,7 +28,7 @@ class Database_Table_Test(unittest.TestCase):
     #Check if the delete operation with AWS RDS is established or not
     def test_delete_operation(self):
         sqlObj = sql_helper()
-        deleteTask= sqlObj.run_query('Delete from Tasks where TaskID=1000')
+        deleteTask= sqlObj.run_query('Delete from Tasks where TaskID="1000"')
         task_details = sqlObj.run_query('select * from Tasks where TaskID = "1000"')
         task_details = str(task_details)
 
