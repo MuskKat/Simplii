@@ -179,7 +179,7 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 - [x] Added common errors in the helpful_resources folder for quick debugging and added a file with dummy data insert queries to get DB setup.
 
 ## Phase 5:
-- [x] Created a brand new AWS RDS mysql database and replaced the need to setup a localhost database server by integrating it into the project
+- [x] Configured a brand new AWS RDS mysql database and replaced the need to setup a localhost database server by integrating it into the project
 - [x] Implemented email notification to user on task delete operation
 - [x] Added update button for user info 
 - [x] Cleaned the Database by dropping unused tables and fixing the column mapping of User table
