@@ -178,16 +178,23 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 - [x] Fixed tasks tables: mapped with correct values
 - [x] Added common errors in the helpful_resources folder for quick debugging and added a file with dummy data insert queries to get DB setup.
 
- 
+## Phase 5:
+- [x] Created a brand new AWS RDS mysql database and replaced the need to setup a localhost database server by integrating it into the project
+- [x] Implemented email notification to user on task delete operation
+- [x] Added update button for user info 
+- [x] Cleaned the Database by dropping unused tables and fixing the column mapping of User table 
+- [x] Updated common errors in the helpful_resources folder for quick debugging and added a file with dummy data insert queries to get DB setup.
+      
 ### Future Enhancements:
 
-- [ ] Fix notification system for emails
+- [ ] Make collaborative tasks: adding other users to your task
+- [ ] Adding a chatbox assistant for some features
 - [ ] Slack/ Discord Reminders or Subscription
-- [ ] Add date tracking for sub tasks
+- [ ] Add date tracking for sub-tasks
 
 
 ## Contributions to the Project
-Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
+Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii/blob/main/CONTRIBUTING.md) if you want to contribute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
 ## Contributors of Phase 5
 <center>
