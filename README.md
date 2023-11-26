@@ -117,7 +117,7 @@ ER Diagram                 |  Application Flowchart
 
      **To run/test the site locally:**
 
-     - Clone [Simplii github repo](https://github.com/Himanshuu-Gupta/Simplii/).
+     - Clone [Simplii github repo](https://github.com/MuskKat/Simplii/).
 
      - Navigate to [project directory](./).
   
