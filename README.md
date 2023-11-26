@@ -133,7 +133,7 @@ ER Diagram                 |  Application Flowchart
 ## Third-Party Tools
 
 - [AWS Relational Database Service-RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
-  -  The AWS Database is used as a primary DB by the location. The application interacts with the DB and no additional steps are required from the users. For any contributors or future developers, please mail to himanshu199586@gmail.com to get your AWS IAM user account details to connect to AWS RDS.
+  -  The AWS Database is used as a primary DB by the location. The application interacts with the DB and no additional steps are required from the users. For any contributors or future developers, please mail to muskyk32@gmail.com to get your AWS IAM user account details to connect to AWS RDS.
 
 ## :page_facing_up: License <a name="License"></a>
 This project is licensed under the terms of the MIT license. Please check [License](https://github.com/Himanshuu-Gupta/Simplii/blob/main/LICENSE) for more details.
