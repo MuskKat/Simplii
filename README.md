@@ -92,6 +92,24 @@ ER Diagram                 |  Application Flowchart
   Now the home page directs to the current logged in user
 <img src = "https://github.com/Prathmesh2498/Simplii/blob/m-payal-update-README-2/docs/Phase%204/New%20login%20session.png" width = "1000"/>
 
+## Phase 5 Works:
+- **Email Notification**
+  Fixed/Rebuilt the email notification system
+<img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20180702.png" width = "1000"/>
+
+- **Collaborative Task Features**
+  Adding more user to task by notifing them via email
+
+  Add Collaborator Frontend and Email Notification for the same
+<img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20163555.png" width = "1000"/>
+<img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20182920.png" width = "1000"/>
+<img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20163807.png" width = "1000"/>
+<img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20163714.png" width = "1000"/>
+
+  
+
+
+
 ## Getting started:
 
   - ### Prerequisite:
