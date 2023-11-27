@@ -1,47 +1,47 @@
 {% extends "layout/base.html" %} {% block content %}
 
 <div class="container-fluid">
-    <div class="row content">
-        <!-- Left Sidebar -->
-        <div class="col-sm-2 sidenav sidenav-left">
+  <div class="row content">
+    <!-- Left Sidebar -->
+    <div class="col-sm-2 sidenav sidenav-left"></div>
 
-
-
+    <!-- Content -->
+    <div class="col-sm-8 text-left main-content">
+      <center>
+        <img
+          class="rounded-circle"
+          alt="100x100"
+          src="https://ih1.redbubble.net/image.1703296696.9941/st,small,507x507-pad,600x600,f8f8f8.jpg"
+          height="250px"
+          width="250px"
+          data-holder-rendered="true"
+        />
+      </center>
+      <br />
+      <div class="card status-card col-md" style="width: auto">
+        <div class="card-body">
+          <h5 class="card-title">User Details</h5>
         </div>
-
-        <!-- Content -->
-        <div class="col-sm-8 text-left main-content">
-            <center>
-                <img class="rounded-circle" alt="100x100" src="https://ih1.redbubble.net/image.1703296696.9941/st,small,507x507-pad,600x600,f8f8f8.jpg" height="250px" width="250px" data-holder-rendered="true">
-            </center>
-            <br>
-            <div class="card status-card col-md" style="width: auto;">
-                <div class="card-body">
-                    <h5 class="card-title">User Details</h5>
-                </div>
-                <div class="form-group">
-                    <label for="taskName">Full Name</label>
-                    <input type="text" name="taskname" class="form-control" id="taskName" placeholder="{{session['fullname']}}" required="required">
-                </div>
-                <div class="form-group">
-                    <label for="taskName">Email</label>
-                    <input type="email" name="taskname" class="form-control" id="taskName" placeholder="{{session['email']}}" disabled=true>
-                </div>
-                <a href="">Change Password</a>
-                <div class="card-body">
+        <div class="form-group">
+          <label for="taskName">Full Name</label>
+          <input type="text" name="taskname" class="form-control" id="taskName" placeholder="{{session['fullname']}}" required="required" disabled="true" />
+        </div>
+        <div class="form-group">
+          <label for="taskName">Email</label>
+          <input type="email" name="taskname" class="form-control" id="taskName" placeholder="{{session['email']}}" disabled="true" />
+        </div>
+        <a href="">Update Password</a>
+        <!-- <div class="card-body">
                     <button style="float: right;" class="btn btn-outline-primary">Update</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-2 sidenav sidenav-left">
-
-
-
-        </div>
+                </div> -->
+      </div>
+      <div class="card-body">
+        <a href="/view_all_tasks"><h8 class="card-title">Return</h8></a>
+      </div>
     </div>
+
+    <div class="col-sm-2 sidenav sidenav-left"></div>
+  </div>
 </div>
-
-
 
 {% endblock content %}
