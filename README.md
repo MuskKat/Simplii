@@ -98,12 +98,13 @@ ER Diagram                 |  Application Flowchart
 <img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20180702.png" width = "1000"/>
 
 - **Collaborative Task Features**
-  Adding more user to task by notifing them via email
-
-  Add Collaborator Frontend and Email Notification for the same
+  Add Collaborator Frontent 
 <img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20163555.png" width = "1000"/>
 <img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20182920.png" width = "1000"/>
 <img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20163807.png" width = "1000"/>
+
+Email Notification to the email added as the collaborator
+
 <img src = "https://github.com/MuskKat/Simplii/blob/main/docs/Phase%205/Screenshots/Screenshot%202023-11-27%20163714.png" width = "1000"/>
 
   
