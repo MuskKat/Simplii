@@ -129,7 +129,6 @@ class task_model:
             con.run_query(queryDel)
         query = "DELETE FROM Tasks WHERE Taskid ='" + taskid+"';"
         con.run_query(query)
-        print("HEREEE")
         # SOF EMAIL #
         send_mail(you, 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', 'Name of the Task')
 
