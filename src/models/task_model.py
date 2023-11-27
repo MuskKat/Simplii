@@ -108,14 +108,17 @@ class task_model:
 
     def delete_task(self, taskid):
         querySub = f"SELECT * from Sub_tasks where TaskID = '{taskid}';"
-        subTasks = con.run_query(querySub)
-        currUserName = session["username"]
+        try:
+            subTasks = con.run_query(querySub)
+        except:
+            print("ERROR in Subtasks")
+            subTasks = ''
+        currUserID= session["username"]
         user_email = con.run_query(
-            f"select EmailId from user where user.UserId = '{currUserName}';")
+            f"SELECT EmailId from User where UserId = '{currUserID}';")
         you = user_email[0][0]
-        print("THE CURRENT USER IS:", currUserName)
+        print("THE CURRENT USER IS:", currUserID)
         print("THE CURRENT USER EMAIL IS:", user_email[0][0])
-
         if len(subTasks) > 0:
             ids = ""
             for i in subTasks:
@@ -126,9 +129,9 @@ class task_model:
             con.run_query(queryDel)
         query = "DELETE FROM Tasks WHERE Taskid ='" + taskid+"';"
         con.run_query(query)
-        
+        print("HEREEE")
         # SOF EMAIL #
-        send_mail(you, 'Task Delete Alert')
+        send_mail(you, 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', 'Name of the Task')
 
     def get_task_by_id(self, taskid):
         query = "SELECT * FROM tasks WHERE Taskid =" + taskid
@@ -155,5 +158,7 @@ class task_model:
         result = pd.DataFrame(list(result))
         return result.to_dict('records')
 
-    def add_collaborator(self, email, subject):
-        send_mail(email, subject)
+    def add_collaborator(self, email, task_name):
+        subject = 'Simplii: New Task Alert'
+        message = "You have been succesfully added as a collaborator on the following task:<br> <strong>{}</strong>"
+        send_mail(email, subject, message, task_name)

@@ -45,7 +45,6 @@
                     Add
                   </button></td>
             </tr>
-            {% endfor %}
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -57,18 +56,23 @@
                     </button>
                     </div>
                     <div class="modal-body">
-                        Enter the email ID<br>
+                        Enter the email ID of Collaborator you wish to add<br><br>
                         <form action="tasks/add_collaborator" method="POST">
-                            <input type="text" name="email" placeholder="abc@gmail.com">
+                            <input type="text" class="form-control" name="email" placeholder="john.doe@email.com">
+                            <input type="hidden" name="task_name" value="{{ item.2 }}">
+                            <br><br>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-primary">Notify them!</button>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
                 </div>
-            </div>            
+            </div>    
+            
+            {% endfor %}       
         </tbody>
     </table>
 </div>

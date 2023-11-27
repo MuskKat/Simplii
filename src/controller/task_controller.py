@@ -26,7 +26,12 @@ def create_task():
 @tasks.route('', methods=['GET'])
 def delete_task():
     taskid = request.args.get('taskid')
-    task.delete_task(taskid)
+    try:
+        task.delete_task(taskid)
+        flash('User has been succesfully deleted', 'success')
+    except:
+        print("ERROR")
+        flash('Could not send delete user, try again later!', 'failure')
     return redirect('/')
 
 
@@ -78,8 +83,9 @@ def get_subtasks():
 @tasks.route('/add_collaborator', methods=['POST'])
 def add_collaborator():
     email = request.form['email']
+    task_name = request.form['task_name']
     try:
-        task.add_collaborator(email, 'You have been added to a task!')
+        task.add_collaborator(email, task_name)
         flash('User has been succesfully emailed', 'success')
     except:
         flash('Could not send email to the user, try again later!', 'failure')

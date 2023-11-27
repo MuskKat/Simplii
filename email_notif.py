@@ -1,7 +1,7 @@
 
 # Import smtplib for the actual sending function
 import smtplib
-
+import os
 # Import the email modules we'll need
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -12,31 +12,29 @@ from email.mime.multipart import MIMEMultipart
     # Create a text/plain message
 ##    msg = MIMEText(fp.read())
 
-def send_mail(you, subject):
+def send_mail(you, subject, message, task_name):
   me = 'nitinjain0455@gmail.com'
   msg = MIMEMultipart('alternative')
   msg['Subject'] = subject
   msg['From'] = me
   msg['To'] = you
 
-  text = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.python.org"
+
   html = """\
   <html>
     <head></head>
     <body>
-      <p>Hi!<br>
-        How are you?<br>
-        Here is the <a href="http://www.python.org">link</a> you wanted.
+      <p>"""+message.format(task_name)+"""<br><br>
+        Regards,<br>
+        Team Simplii<br><br><br>
+        <i>This is an automated email. Please do not respond to this email.</i>
       </p>
     </body>
   </html>
   """
 
   # Record the MIME types of both parts - text/plain and text/html.
-  part1 = MIMEText(text, 'plain')
-  part2 = MIMEText(html, 'html')
-  msg.attach(part1)
-  msg.attach(part2)
+  msg.attach(MIMEText(html, 'html'))
 
   # Send the message via our own SMTP server, but don't include the
   # envelope header.
