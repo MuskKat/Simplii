@@ -181,6 +181,7 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 ## Phase 5:
 - [x] Configured a brand new AWS RDS mysql database and replaced the need to setup a localhost database server by integrating it into the project
 - [x] Implemented email notification to user on task delete operation
+- [x] Added collaborative task feature: adding other users to your task and notifying them about their task via email
 - [x] Added update button for user info 
 - [x] Cleaned the Database by dropping unused tables and fixing the column mapping of User table
 - [x] Fixed build and unit testing
@@ -189,7 +190,6 @@ This project is licensed under the terms of the MIT license. Please check [Licen
       
 ### Future Enhancements:
 
-- [ ] Make collaborative tasks: adding other users to your task
 - [ ] Adding a chatbox assistant for some features
 - [ ] Slack/ Discord Reminders or Subscription
 - [ ] Add date tracking for sub-tasks
