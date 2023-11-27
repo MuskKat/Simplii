@@ -127,9 +127,9 @@ class task_model:
             ids = ids[:-2]
             queryDel = f"DELETE from Sub_tasks where STaskID IN ({ids});"
             con.run_query(queryDel)
-        query = "DELETE FROM Tasks WHERE Taskid ='" + taskid+"';"
+        query = "DELETE FROM Tasks WHERE Taskid ='"+taskid+"';"
         con.run_query(query)
-        task_name = "SELECT TaskName Tasks WHERE Taskid = '"+taskid+"';"
+        task_name = con.run_query("SELECT TaskName Tasks WHERE Taskid = '"+taskid+"';")
         # SOF EMAIL #
         send_mail(you, 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', task_name)
 
