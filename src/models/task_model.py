@@ -3,6 +3,7 @@ from src.models.sql_helper import sql_helper
 from datetime import datetime, timedelta, date
 import uuid
 from flask import flash, Flask, session
+from email_notif import send_mail
 # from flask import Flask, render_template, redirect, session, request
 # Import smtplib for the actual sending function
 import smtplib
@@ -113,7 +114,7 @@ class task_model:
             f"select EmailId from user where user.UserId = '{currUserName}';")
         you = user_email[0][0]
         print("THE CURRENT USER IS:", currUserName)
-        print("THE CURRENT USER EMIAL IS:", user_email[0][0])
+        print("THE CURRENT USER EMAIL IS:", user_email[0][0])
 
         if len(subTasks) > 0:
             ids = ""
@@ -125,46 +126,9 @@ class task_model:
             con.run_query(queryDel)
         query = "DELETE FROM Tasks WHERE Taskid ='" + taskid+"';"
         con.run_query(query)
-
+        
         # SOF EMAIL #
-        me = 'nitinjain0455@gmail.com'
-        # you = 'muskyk32@gmail.com'
-        msg = MIMEMultipart('alternative')
-        msg['Subject'] = 'test file'
-        msg['From'] = me
-        msg['To'] = you
-
-        text = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.python.org"
-        html = """\
-        <html>
-        <head></head>
-        <body>
-            <p>Hi!<br>
-            How are you?<br>
-            Here is the <a href="http://www.python.org">link</a> you wanted.
-            </p>
-        </body>
-        </html>
-        """
-
-        # Record the MIME types of both parts - text/plain and text/html.
-        part1 = MIMEText(text, 'plain')
-        part2 = MIMEText(html, 'html')
-        msg.attach(part1)
-        msg.attach(part2)
-
-        # Send the message via our own SMTP server, but don't include the
-        # envelope header.
-        mail = smtplib.SMTP('smtp.gmail.com', 587)
-        mail.ehlo()
-
-        mail.starttls()
-
-        mail.login('nitinjain0455@gmail.com', 'swjq qzus winm tylx')
-        mail.sendmail(me, you, msg.as_string())
-        mail.quit()
-        return
-    # EOF #
+        send_mail(you, 'Task Delete Alert')
 
     def get_task_by_id(self, taskid):
         query = "SELECT * FROM tasks WHERE Taskid =" + taskid
@@ -190,3 +154,6 @@ class task_model:
         result = con.run_query(query)
         result = pd.DataFrame(list(result))
         return result.to_dict('records')
+
+    def add_collaborator(self, email, subject):
+        send_mail(email, subject)
