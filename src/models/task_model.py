@@ -129,8 +129,9 @@ class task_model:
             con.run_query(queryDel)
         query = "DELETE FROM Tasks WHERE Taskid ='" + taskid+"';"
         con.run_query(query)
+        task_name = "SELECT TaskName Tasks WHERE Taskid = '"+taskid+"';"
         # SOF EMAIL #
-        send_mail(you, 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', 'Name of the Task')
+        send_mail(you, 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', task_name)
 
     def get_task_by_id(self, taskid):
         query = "SELECT * FROM tasks WHERE Taskid =" + taskid
