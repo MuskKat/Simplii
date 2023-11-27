@@ -136,7 +136,7 @@ class task_model:
         con.run_query(query)
         
         # SOF EMAIL #
-        send_mail("muskyk32@gmail.com", 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', task_name)
+        send_mail(you, 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', task_name)
 
     def get_task_by_id(self, taskid):
         query = "SELECT * FROM tasks WHERE Taskid =" + taskid
