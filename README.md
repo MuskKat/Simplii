@@ -203,8 +203,8 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 - [x] Added update button for user info 
 - [x] Cleaned the Database by dropping unused tables and fixing the column mapping of User table
 - [x] Fixed build and unit testing
-- [x] Added style checker
-- [x] Updated common errors in the helpful_resources folder for quick debugging and added a file with dummy data insert queries to get DB setup.
+- [x] Added style checker and fixed linting.
+- [x] Updated common errors in the helpful_resources folder and Code component Document.
       
 ### Future Enhancements:
 
