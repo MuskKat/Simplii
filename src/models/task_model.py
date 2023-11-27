@@ -119,6 +119,7 @@ class task_model:
         you = user_email[0][0]
         print("THE CURRENT USER IS:", currUserID)
         print("THE CURRENT USER EMAIL IS:", user_email[0][0])
+        
         if len(subTasks) > 0:
             ids = ""
             for i in subTasks:
@@ -127,11 +128,15 @@ class task_model:
             ids = ids[:-2]
             queryDel = f"DELETE from Sub_tasks where STaskID IN ({ids});"
             con.run_query(queryDel)
+
+        task_name = con.run_query("SELECT TaskName from Tasks WHERE TaskID = '"+taskid+"';")
+        
+        task_name = str(task_name).split('\'')[1]
         query = "DELETE FROM Tasks WHERE Taskid ='"+taskid+"';"
         con.run_query(query)
-        task_name = con.run_query("SELECT TaskName Tasks WHERE Taskid = '"+taskid+"';")
+        
         # SOF EMAIL #
-        send_mail(you, 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', task_name)
+        send_mail("muskyk32@gmail.com", 'Simplii: Task Deleted!', 'This is an automated email from Simplii to inform you that your task <strong>{}</strong> has been successfully deleted.', task_name)
 
     def get_task_by_id(self, taskid):
         query = "SELECT * FROM tasks WHERE Taskid =" + taskid
