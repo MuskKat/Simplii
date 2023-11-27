@@ -74,3 +74,13 @@ def get_subtasks():
     task_id = request.args.get('task_id')
     existing_data = task.get_all_subtasks(task_id)
     return render_template('tasks/view_subtasks.html', existing_data=existing_data)
+
+@tasks.route('/add_collaborator', methods=['POST'])
+def add_collaborator():
+    email = request.form['email']
+    try:
+        task.add_collaborator(email, 'You have been added to a task!')
+        flash('User has been succesfully emailed', 'success')
+    except:
+        flash('Could not send email to the user, try again later!', 'failure')
+    return redirect('/view_all_tasks')
