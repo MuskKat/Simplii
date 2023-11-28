@@ -140,7 +140,7 @@ Email Notification to the email added as the collaborator
 
      - Navigate to [project directory](./).
 
-     - Navigate to [project directory](./email_notif.py) and give your emailid and password in mail.login('emailid','password') function.
+     - Navigate to [email_notif.py](./email_notif.py) and give your emailid and password in mail.login('emailid','password') function at line 47.
   
      - Run `python app.py` or `python3 app.py`
 
