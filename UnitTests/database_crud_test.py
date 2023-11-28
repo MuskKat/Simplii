@@ -23,7 +23,8 @@ class Database_Table_Test(unittest.TestCase):
         try:
             sqlObj.run_query('DELETE FROM Tasks where TaskID="1000"')
         except:
-            addTask= sqlObj.run_query('Insert into Tasks Values ( 1000,1, "Get milk and bread", "Waiting", "2021-11-02", "2021-11-06", 4, 1, "xyz")')
+            print('')
+        addTask= sqlObj.run_query('Insert into Tasks Values ( 1000,1, "Get milk and bread", "Waiting", "2021-11-02", "2021-11-06", 4, 1, "xyz")')
         task_details = sqlObj.run_query('select * from Tasks where Taskname = "Get milk and bread"')
         task_details = str(task_details)
         #self.assertTrue('Get milk and bread' in task_details)
