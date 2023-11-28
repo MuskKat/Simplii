@@ -139,6 +139,8 @@ Email Notification to the email added as the collaborator
      - Clone [Simplii github repo](https://github.com/MuskKat/Simplii/).
 
      - Navigate to [project directory](./).
+
+     - Navigate to [project directory](./email_notif.py) and give your emailid and password in mail.login('emailid','password') function.
   
      - Run `python app.py` or `python3 app.py`
 

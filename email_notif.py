@@ -43,7 +43,8 @@ def send_mail(you, subject, message, task_name):
 
   mail.starttls()
 
-  mail.login('nitinjain0455@gmail.com', 'swjq qzus winm tylx')
+  # CHANGE IT THE EMAIL CREDENTIALS YOU WANT TO SEND OUT YOUR SIMPLII ALERTS FROM
+  mail.login('xyz@gmail.com', '####')
   mail.sendmail(me, you, msg.as_string())
   mail.quit()
   return 
